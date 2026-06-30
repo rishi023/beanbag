@@ -6,6 +6,7 @@ import {
   Sparkles,
   Workflow,
 } from 'lucide-react'
+import { Logo } from '../ui/Logo'
 
 export function HeroVisual() {
   return (
@@ -78,11 +79,8 @@ export function HeroVisual() {
         <div className="grid grid-cols-[88px_1fr]">
           {/* Sidebar */}
           <div className="border-r border-white/8 bg-black/50 p-3">
-            <div className="mb-4 flex items-center gap-1.5">
-              <span className="flex h-5 w-5 items-center justify-center rounded bg-white text-[9px] font-bold text-black">
-                b
-              </span>
-              <span className="text-[9px] font-semibold tracking-wider text-white">BB</span>
+            <div className="mb-4">
+              <Logo size="sm" showWordmark={false} />
             </div>
                   {['Overview', 'Students', 'Academics'].map((item, i) => (
               <div

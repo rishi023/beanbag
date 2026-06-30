@@ -2,6 +2,7 @@ import { Menu, X } from 'lucide-react'
 import { useEffect, useState } from 'react'
 import { cn } from '../../lib/utils'
 import { Button } from '../ui/Button'
+import { Logo } from '../ui/Logo'
 
 const navLinks = [
   { label: 'Home', href: '#home' },
@@ -45,11 +46,8 @@ export function Header() {
         )}
       >
         <div className="mx-auto flex h-16 max-w-7xl items-center justify-between gap-4 px-4 sm:px-6 lg:px-8">
-          <a href="#home" className="flex shrink-0 items-center gap-2.5">
-            <span className="flex h-8 w-8 items-center justify-center rounded-md bg-white">
-              <span className="text-sm font-bold text-black">b</span>
-            </span>
-            <span className="text-sm font-bold tracking-widest text-white">BEAN-BAG</span>
+          <a href="#home" className="flex shrink-0 items-center">
+            <Logo />
           </a>
 
           <nav className="hidden items-center gap-1 lg:flex" aria-label="Main navigation">

@@ -1,5 +1,6 @@
 import { ArrowRight } from 'lucide-react'
 import { Button } from '../ui/Button'
+import { Logo } from '../ui/Logo'
 
 const footerLinks = {
   Products: [
@@ -64,11 +65,8 @@ export function Footer() {
       <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8">
         <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-5">
           <div className="lg:col-span-1">
-            <a href="#home" className="flex items-center gap-2.5">
-              <span className="flex h-8 w-8 items-center justify-center rounded-md bg-white">
-                <span className="text-sm font-bold text-black">b</span>
-              </span>
-              <span className="text-sm font-bold tracking-widest text-white">BEAN-BAG</span>
+            <a href="#home" className="inline-flex">
+              <Logo />
             </a>
             <p className="mt-4 text-sm leading-relaxed text-zinc-500">
               Design, technology, and systems — including SchoolDash and CollegeDash for
